@@ -3,9 +3,10 @@ from google.cloud import bigquery
 
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = './Credential/secret_key.json'
 client = bigquery.Client()
+#TABLE_NAME = input("Enter Table Name")
 
 query = """
-    CREATE TABLE `cymbal-store-dev.PY_ETL.FILE_PR_T`
+    CREATE TABLE `cymbal-store-dev.PY_ETL.FILE_PR_T_SCD1`
      (SNo INT64,
      Name STRING,
      Gender STRING,
